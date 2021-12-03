@@ -1,26 +1,6 @@
-## HEADER ####
-## Who: J Collins 
-## what: PhD Plan Gantt Chart 
-## Last edited: 2021-12-03
 
-
-## CONTENTS ####
-## 00 Setup
-## 01 Gantt Chart  
-## 02 X-axis dates
-
-
-## 00 Setup ####
-# working directory
-setwd("~/OneDrive - Harper Adams University/PhD Overview/Completion_plan/")
-getwd()
-
-devtools::install_github('rich-iannone/DiagrammeR')
-install.packages('DiagrammeR')
+devtools::install_github('joejcollins/DiagrammeR')
 library(DiagrammeR)
-update.packages('DiagrammeR')
-
- ## 01 Gantt Chart ####
 
 gant1 <- mermaid("
 gantt
