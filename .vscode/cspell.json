@@ -28,6 +28,7 @@
         "rsync",
         "setenv",
         "subnet",
+        "twint",
         "ujson",
         "useable",
         "vcpus",
