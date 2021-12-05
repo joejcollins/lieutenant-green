@@ -3,15 +3,12 @@ image:
 
 tasks:
   - name: Initialize shell and pip
-  - before: |
-      export PYENV_VERSION=3.6.10
-    init: |
-      pip install -r requirements.txt
     command: |
       echo 'eval "$(starship init bash)"' >> $HOME/.bashrc
       echo 'export PIP_USER=false' >> $HOME/.bashrc
       echo 'export PYENV_VERSION=3.6.10' >> $HOME/.bashrc
       source ~/.bashrc
+      pip install -r requirements.txt
 
 vscode:
   extensions:
