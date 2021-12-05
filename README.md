@@ -2,13 +2,6 @@
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/joejcollins/lieutenant-green)
 
-## Factors
-
-Longevity and robustness
-
-Repetition
-
-Twitter licence
 
 ## Options
 
@@ -16,7 +9,7 @@ Twitter licence
 
 Classically scraping web pages can be done with Requests and BeautifulSoup4.  Requests is used to get the HTML and BeautifulSoup4 to parse the HTML.  Obviously this is a brittle strategy since it is dependent on the pages layout to work, so design changes can break the scraping.  There were a number of Open Source solutions available (e.g. https://github.com/bisguzar/twitter-scraper) which took this approach and currently no longer work, which is probably testimony to the brittleness of this approach.
 
-More to the point, the Twitter web page has a infinite scroll which makes javascript calls to the https://api.twitter.com/graphql endpoint to draw down new tweets.  With enough effort one could probably determine how to mimic these calls.  Fortunately an Open Source solution is available which does exactly that.
+More significantly, the Twitter web page has a infinite scroll which makes javascript calls to the https://api.twitter.com/graphql endpoint to draw down new tweets.  With enough effort one could probably determine how to mimic these calls.  Fortunately an Open Source solution is available which does exactly that.
 
 ### Twint
 
@@ -24,15 +17,11 @@ Twint (Twitter Intelligence Tool) makes use of the https://api.twitter.com/graph
 
 ### Twitter API v2
 
-In theory this should be the best way to download a set of tweets.
-
-
-Agree to terms and conditions
-
-curl -X GET -H "Authorization: Bearer <BEARER TOKEN>" "https://api.twitter.com/2/tweets/440322224407314432"
+Twitter provides access to tweets via its own API.  However, it is not without its inconveniences.  In order to use the API an application has to be approved by Twitter.  For obvious reasons Twitter is cautious about the uses to which its services are used.  In theory this should be the most convenient way to download a set of tweets.  With an appropriate a bearer token it should be possible to use curl to download the tweets of interest.  e.g.  `curl -X GET -H "Authorization: Bearer <BEARER TOKEN>" "https://api.twitter.com/2/tweets/440322224407314432"`.  There are 
 
 
 ## Recommendation
 
-Despite the challenges of negoiating with Twitter best to work with them.
+
+Despite the challenges of negotiating with Twitter best to work with them.
 
