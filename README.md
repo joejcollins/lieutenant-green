@@ -4,45 +4,28 @@
 
 ## Factors
 
-Twitter licence
+Longevity and robustness
 
+Repetition
+
+Twitter licence
 
 ## Options
 
-Python is the obvious choice for this kind for work.
+### Requests and BeautifulSoup4
 
-### requests and beautifulsoup4
+Classically scraping web pages can be done with Requests and BeautifulSoup4.  Requests is used to get the HTML and BeautifulSoup4 to parse the HTML.  Obviously this is a brittle strategy since it is dependent on the pages layout to work, so design changes can break the scraping.  There were a number of Open Source solutions available (e.g. https://github.com/bisguzar/twitter-scraper) which took this approach and currently no longer work, which is probably testimony to the brittleness of this approach.
 
-The obvious strate
-
-Brittle strategy
-
-Someone else must have done the work.
-
-And indeed that have
-
-### twitter-scraper
-
-Supposed to do exactly what is says on the tin.
-
-https://pypi.org/project/twitter-scraper/
-
-Fails with `json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)` 
-
-Tests fail with the same error.
-
-Last substantive update was Jul 2020.
+More to the point, the Twitter web page has a infinite scroll which makes javascript calls to the https://api.twitter.com/graphql endpoint to draw down new tweets.  With enough effort one could probably determine how to mimic these calls.  Fortunately an Open Source solution is available which does exactly that.
 
 ### Twint
 
-
-
-pip install --user --upgrade git+https://github.com/twintproject/twint.git@origin/master#egg=twint
-
-
-twint -u joejcollins
+Twint (Twitter Intelligence Tool) makes use of the https://api.twitter.com/graphql endpoint to retrieve tweets and even includes facilities to store the tweets as json or in a SQLite database.  Never-the-less the strategy remains somewhat brittle.  At the time of writing version 2.1.20 on https://pypi.org/ but the version from https://github.com/twintproject/twint.git does.  A more formal and probably less brittle approach is to use the official Twitter API.
 
 ### Twitter API v2
+
+In theory this should be the best way to download a set of tweets.
+
 
 Agree to terms and conditions
 
