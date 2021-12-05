@@ -2,15 +2,17 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - name: Initialize pip
+  - name: Initialize shell and pip
+  - before: |
+      export PYENV_VERSION=3.6.10
     init: |
+      pip install -r requirements.txt
+    command: |
       echo 'eval "$(starship init bash)"' >> $HOME/.bashrc
       echo 'export PIP_USER=false' >> $HOME/.bashrc
       echo 'export PYENV_VERSION=3.6.10' >> $HOME/.bashrc
       source ~/.bashrc
-      pyenv global 3.6.10
-      pip install -r requirements.txt
-      
+
 vscode:
   extensions:
     - ms-python.python
