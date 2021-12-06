@@ -9,7 +9,7 @@
 
 Classically scraping web pages can be done with Requests and BeautifulSoup4.  Requests is used to get the HTML and BeautifulSoup4 to parse the HTML.  Obviously this is a brittle strategy since it is dependent on the pages layout to work, so design changes can break the scraping.  There were a number of Open Source solutions available (e.g. https://github.com/bisguzar/twitter-scraper) which took this approach and currently no longer work, which is probably testimony to the brittleness of this approach.
 
-More significantly, the Twitter web page has a infinite scroll which makes javascript calls to the https://api.twitter.com/graphql endpoint to draw down new tweets so this approach is less likely to be successful.  With enough effort one could probably determine how to mimic these calls.  Fortunately an Open Source solution is available which does exactly that.
+More significantly, the Twitter web page has a infinite scroll which makes javascript calls to the https://api.twitter.com/graphql endpoint to draw down new tweets so page scraping less likely to be successful.  With enough effort one could probably determine how to mimic these calls.  Fortunately an Open Source solution is available which does exactly that.
 
 ### Twint
 
