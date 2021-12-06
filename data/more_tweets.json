@@ -1,0 +1,546 @@
+[
+    {
+        "created_at": "2021-12-05T22:45:48.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467623423476121603"
+            }
+        ],
+        "id": "1467626284276670470",
+        "text": "Det skal ikke være fare at brannen sprer seg til andre bygg.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T22:34:25.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467619537814228996"
+            }
+        ],
+        "id": "1467623423476121603",
+        "text": "I delen det brenner er det 3 leiligheter. Det bor 5 personer der og det er gjort rede for alle 5.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T22:18:59.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467611119040802817"
+            }
+        ],
+        "id": "1467619537814228996",
+        "text": "Det er full fyr i en rekkehusleilighet. Brannvesenet har startet slukking.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T21:45:32.000Z",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 10,
+                    "tag": "Kongsberg"
+                },
+                {
+                    "start": 11,
+                    "end": 26,
+                    "tag": "Bergmannsveien"
+                }
+            ]
+        },
+        "id": "1467611119040802817",
+        "text": "#Kongsberg #Bergmannsveien Melding om brann i leilighet. Nødetatene er på vei.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T20:02:11.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467580075302346756"
+            }
+        ],
+        "id": "1467585109217927168",
+        "text": "Årsaken til brannen er ukjent. Kiosken var tilkoblet strøm. Politiet oppretter sak på hendelsen.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T19:42:10.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467578519215644674"
+            }
+        ],
+        "id": "1467580075302346756",
+        "text": "Brannen er slukket. Ingen skal være skadet.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T19:35:59.000Z",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 6,
+                    "tag": "Skien"
+                },
+                {
+                    "start": 7,
+                    "end": 20,
+                    "tag": "Moflatevegen"
+                }
+            ]
+        },
+        "id": "1467578519215644674",
+        "text": "#Skien #Moflatevegen Melding om brann i en telefonkiosk som de kan låne bøker fra. Nødetatene er på vei.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T18:52:53.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565339454185472"
+            }
+        ],
+        "id": "1467567669725519877",
+        "text": "Bilberger henter bilen.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T18:43:37.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565217777340417"
+            }
+        ],
+        "id": "1467565339454185472",
+        "text": "Skal være glatt på stedet.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T18:43:08.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467554089659686918"
+            }
+        ],
+        "id": "1467565217777340417",
+        "text": "Politiet oppretter ikke sak.",
+        "source": "TweetDeck"
+    },
+    {
+        "created_at": "2021-12-05T22:45:48.000Z",
+        "text": "Det skal ikke være fare at brannen sprer seg til andre bygg.",
+        "id": "1467626284276670470",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467623423476121603"
+            }
+        ]
+    },
+    {
+        "created_at": "2021-12-05T22:34:25.000Z",
+        "text": "I delen det brenner er det 3 leiligheter. Det bor 5 personer der og det er gjort rede for alle 5.",
+        "id": "1467623423476121603",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467619537814228996"
+            }
+        ]
+    },
+    {
+        "created_at": "2021-12-05T22:18:59.000Z",
+        "text": "Det er full fyr i en rekkehusleilighet. Brannvesenet har startet slukking.",
+        "id": "1467619537814228996",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467611119040802817"
+            }
+        ]
+    },
+    {
+        "created_at": "2021-12-05T21:45:32.000Z",
+        "text": "#Kongsberg #Bergmannsveien Melding om brann i leilighet. Nødetatene er på vei.",
+        "id": "1467611119040802817",
+        "source": "TweetDeck",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 10,
+                    "tag": "Kongsberg"
+                },
+                {
+                    "start": 11,
+                    "end": 26,
+                    "tag": "Bergmannsveien"
+                }
+            ]
+        }
+    },
+    {
+        "created_at": "2021-12-05T20:02:11.000Z",
+        "text": "Årsaken til brannen er ukjent. Kiosken var tilkoblet strøm. Politiet oppretter sak på hendelsen.",
+        "id": "1467585109217927168",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467580075302346756"
+            }
+        ]
+    },
+    {
+        "created_at": "2021-12-05T19:42:10.000Z",
+        "text": "Brannen er slukket. Ingen skal være skadet.",
+        "id": "1467580075302346756",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467578519215644674"
+            }
+        ]
+    },
+    {
+        "created_at": "2021-12-05T19:35:59.000Z",
+        "text": "#Skien #Moflatevegen Melding om brann i en telefonkiosk som de kan låne bøker fra. Nødetatene er på vei.",
+        "id": "1467578519215644674",
+        "source": "TweetDeck",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 6,
+                    "tag": "Skien"
+                },
+                {
+                    "start": 7,
+                    "end": 20,
+                    "tag": "Moflatevegen"
+                }
+            ]
+        }
+    },
+    {
+        "created_at": "2021-12-05T18:52:53.000Z",
+        "text": "Bilberger henter bilen.",
+        "id": "1467567669725519877",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565339454185472"
+            }
+        ]
+    },
+    {
+        "created_at": "2021-12-05T18:43:37.000Z",
+        "text": "Skal være glatt på stedet.",
+        "id": "1467565339454185472",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565217777340417"
+            }
+        ]
+    },
+    {
+        "created_at": "2021-12-05T18:43:08.000Z",
+        "text": "Politiet oppretter ikke sak.",
+        "id": "1467565217777340417",
+        "source": "TweetDeck",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467554089659686918"
+            }
+        ]
+    },
+    {
+        "text": "Det skal ikke være fare at brannen sprer seg til andre bygg.",
+        "created_at": "2021-12-05T22:45:48.000Z",
+        "id": "1467626284276670470",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467623423476121603"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "text": "I delen det brenner er det 3 leiligheter. Det bor 5 personer der og det er gjort rede for alle 5.",
+        "created_at": "2021-12-05T22:34:25.000Z",
+        "id": "1467623423476121603",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467619537814228996"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "text": "Det er full fyr i en rekkehusleilighet. Brannvesenet har startet slukking.",
+        "created_at": "2021-12-05T22:18:59.000Z",
+        "id": "1467619537814228996",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467611119040802817"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "text": "#Kongsberg #Bergmannsveien Melding om brann i leilighet. Nødetatene er på vei.",
+        "created_at": "2021-12-05T21:45:32.000Z",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 10,
+                    "tag": "Kongsberg"
+                },
+                {
+                    "start": 11,
+                    "end": 26,
+                    "tag": "Bergmannsveien"
+                }
+            ]
+        },
+        "id": "1467611119040802817",
+        "source": "TweetDeck"
+    },
+    {
+        "text": "Årsaken til brannen er ukjent. Kiosken var tilkoblet strøm. Politiet oppretter sak på hendelsen.",
+        "created_at": "2021-12-05T20:02:11.000Z",
+        "id": "1467585109217927168",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467580075302346756"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "text": "Brannen er slukket. Ingen skal være skadet.",
+        "created_at": "2021-12-05T19:42:10.000Z",
+        "id": "1467580075302346756",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467578519215644674"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "text": "#Skien #Moflatevegen Melding om brann i en telefonkiosk som de kan låne bøker fra. Nødetatene er på vei.",
+        "created_at": "2021-12-05T19:35:59.000Z",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 6,
+                    "tag": "Skien"
+                },
+                {
+                    "start": 7,
+                    "end": 20,
+                    "tag": "Moflatevegen"
+                }
+            ]
+        },
+        "id": "1467578519215644674",
+        "source": "TweetDeck"
+    },
+    {
+        "text": "Bilberger henter bilen.",
+        "created_at": "2021-12-05T18:52:53.000Z",
+        "id": "1467567669725519877",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565339454185472"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "text": "Skal være glatt på stedet.",
+        "created_at": "2021-12-05T18:43:37.000Z",
+        "id": "1467565339454185472",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565217777340417"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "text": "Politiet oppretter ikke sak.",
+        "created_at": "2021-12-05T18:43:08.000Z",
+        "id": "1467565217777340417",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467554089659686918"
+            }
+        ],
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467626284276670470",
+        "created_at": "2021-12-05T22:45:48.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467623423476121603"
+            }
+        ],
+        "text": "Det skal ikke være fare at brannen sprer seg til andre bygg.",
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467623423476121603",
+        "created_at": "2021-12-05T22:34:25.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467619537814228996"
+            }
+        ],
+        "text": "I delen det brenner er det 3 leiligheter. Det bor 5 personer der og det er gjort rede for alle 5.",
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467619537814228996",
+        "created_at": "2021-12-05T22:18:59.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467611119040802817"
+            }
+        ],
+        "text": "Det er full fyr i en rekkehusleilighet. Brannvesenet har startet slukking.",
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467611119040802817",
+        "created_at": "2021-12-05T21:45:32.000Z",
+        "text": "#Kongsberg #Bergmannsveien Melding om brann i leilighet. Nødetatene er på vei.",
+        "source": "TweetDeck",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 10,
+                    "tag": "Kongsberg"
+                },
+                {
+                    "start": 11,
+                    "end": 26,
+                    "tag": "Bergmannsveien"
+                }
+            ]
+        }
+    },
+    {
+        "id": "1467585109217927168",
+        "created_at": "2021-12-05T20:02:11.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467580075302346756"
+            }
+        ],
+        "text": "Årsaken til brannen er ukjent. Kiosken var tilkoblet strøm. Politiet oppretter sak på hendelsen.",
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467580075302346756",
+        "created_at": "2021-12-05T19:42:10.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467578519215644674"
+            }
+        ],
+        "text": "Brannen er slukket. Ingen skal være skadet.",
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467578519215644674",
+        "created_at": "2021-12-05T19:35:59.000Z",
+        "text": "#Skien #Moflatevegen Melding om brann i en telefonkiosk som de kan låne bøker fra. Nødetatene er på vei.",
+        "source": "TweetDeck",
+        "entities": {
+            "hashtags": [
+                {
+                    "start": 0,
+                    "end": 6,
+                    "tag": "Skien"
+                },
+                {
+                    "start": 7,
+                    "end": 20,
+                    "tag": "Moflatevegen"
+                }
+            ]
+        }
+    },
+    {
+        "id": "1467567669725519877",
+        "created_at": "2021-12-05T18:52:53.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565339454185472"
+            }
+        ],
+        "text": "Bilberger henter bilen.",
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467565339454185472",
+        "created_at": "2021-12-05T18:43:37.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467565217777340417"
+            }
+        ],
+        "text": "Skal være glatt på stedet.",
+        "source": "TweetDeck"
+    },
+    {
+        "id": "1467565217777340417",
+        "created_at": "2021-12-05T18:43:08.000Z",
+        "referenced_tweets": [
+            {
+                "type": "replied_to",
+                "id": "1467554089659686918"
+            }
+        ],
+        "text": "Politiet oppretter ikke sak.",
+        "source": "TweetDeck"
+    }
+]
