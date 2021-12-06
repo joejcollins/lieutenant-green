@@ -25,7 +25,7 @@ def get_tweets(user_id, page_token=None):
     fields = "tweet.fields=created_at,entities,geo,referenced_tweets,source,text"
     url = f"{base_url}{user_id}/tweets?{fields}"
     if page_token:
-        url = f"{url}&next_token={page_token}"
+        url = f"{url}&pagination_token={page_token}"
     page_of_tweets = get_response(url)
     tweets = page_of_tweets.get('data')
     next_token = page_of_tweets.get('meta').get('next_token')
@@ -46,7 +46,7 @@ def main():
     all_tweets = []
     next_token = None  # the first time round
     for x in range(4):  # gets you 40
-        tweets, next_token = get_tweets(user_id)
+        tweets, next_token = get_tweets(user_id, next_token)
         all_tweets.extend(tweets)
     with open('data/more_tweets.json', 'w', encoding='utf-8') as tweet_file:
         json.dump(all_tweets, tweet_file, indent=4, ensure_ascii=False)
