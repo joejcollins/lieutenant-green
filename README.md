@@ -7,4 +7,4 @@
 * `poetry env use python3.10`
 * `poetry install`
 * `poetry shell`
-* Start with `uvicorn main:app --app-dir fast_api  --reload`
+* Start with `uvicorn fast_api.main:app  --reload`
