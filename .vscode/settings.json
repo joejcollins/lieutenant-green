@@ -19,5 +19,6 @@
     "python.formatting.provider": "black",
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
-    "editor.rulers": [88]
+    "editor.rulers": [88],
+    "python.autoComplete.extraPaths": ["./"],
 }

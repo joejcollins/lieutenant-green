@@ -1,5 +1,5 @@
-from fastapi import FastAPI
 import models.person as person
+from fastapi import FastAPI
 
 app = FastAPI(
     swagger_ui_parameters={
