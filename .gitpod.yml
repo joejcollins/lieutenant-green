@@ -8,7 +8,6 @@ tasks:
       echo 'export PIP_USER=false' >> $HOME/.bashrc
       echo 'export PYENV_VERSION=3.10.0' >> $HOME/.bashrc
       source ~/.bashrc
-      pip install -r requirements.txt
 
 vscode:
   extensions:
