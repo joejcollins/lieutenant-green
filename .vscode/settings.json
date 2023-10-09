@@ -13,7 +13,7 @@
     "editor.detectIndentation": true,
     "python.languageServer": "Pylance",
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Solarized Light",
     "python.defaultInterpreterPath": ".venv/bin/python",
     "python.linting.enabled": true,
     "python.formatting.provider": "black",
