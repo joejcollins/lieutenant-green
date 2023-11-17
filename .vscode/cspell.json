@@ -23,7 +23,6 @@
         "lineinfile",
         "lpass",
         "organisation",
-        "politietsorost",
         "pyenv",
         "pylint",
         "pytest",
