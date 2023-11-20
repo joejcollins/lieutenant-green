@@ -29,3 +29,6 @@ requirements:  # Install the requirements.
 
 run:  # Run app_0.
 	.venv/bin/python app_0/main_0.py
+
+test:  # Run tests.
+	.venv/bin/python -m pytest ./tests --verbose --color=yes
