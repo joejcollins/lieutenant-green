@@ -3,17 +3,16 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "package"
-version = "0.0.1"
-description = "Shared Package"
+name = "app_2"
+version = "0.0.2"
+description = "App 2 Demonstration"
 readme = "README.md"
 requires-python = ">=3.9"
-
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "UnleashClient",
+    "pip-tools",  # used to manage requirements.txt.
+    "setuptools",
+    "toml",
 ]
-[tool.setuptools.packages.find]
-where = ["src"]

@@ -1,10 +1,10 @@
 {
     "folders": [
        {
-         "path": "app1"
+         "path": "app_1"
        },
        {
-         "path": "package"
+         "path": "package_a"
        }
      ],
 }

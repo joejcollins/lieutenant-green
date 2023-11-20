@@ -9,8 +9,8 @@ clean:  # Remove all build, test, coverage and Python artifacts.
 compile:  # Compile the requirements files using pip-tools.
 	rm -f requirements.*
 	.venv/bin/python -m piptools compile --output-file=requirements.txt
+	echo "# Add this root package only" >> requirements.txt
 	echo "--editable ." >> requirements.txt
-	echo "--editable ../package" >> requirements.txt
 
 .PHONY: help
 help: # Show help for each of the makefile recipes.
@@ -27,5 +27,5 @@ requirements:  # Install the requirements.
 	python -m venv .venv
 	.venv/bin/python -m pip install --default-timeout=120 --requirement requirements.txt
 
-run:  # Run app1.
-	.venv/bin/python main1.py
+run:  # Run app_0.
+	.venv/bin/python app_0/main_0.py

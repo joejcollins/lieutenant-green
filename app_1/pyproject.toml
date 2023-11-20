@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "app1"
+name = "app_1"
 version = "0.0.1"
 description = "App1 Demonstration"
 readme = "README.md"

@@ -12,3 +12,12 @@ requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
+dependencies = [
+    "pip-tools",  # used to manage requirements.txt.
+    "setuptools",
+    "toml",
+    "UnleashClient",
+]
+
+# Find all the packages in the project using automatic discovery (flat-layout).
+[tool.setuptools.packages.find]
