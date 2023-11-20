@@ -1,3 +1,3 @@
-from package import module
+from package import module1
 
-module.say_it()
+module1.say_it()
