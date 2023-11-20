@@ -1,0 +1,26 @@
+---
+- name: Feature Flag Action Test
+  gather_facts: false
+  hosts: localhost
+
+  tasks:
+
+    - name: Get the feature flag
+      zengenti_platform_unleash:
+        feature_flag: "new_list_environments"
+      register: new_list_environments
+
+    - name: Notify if new_list_environments.is_enabled is true
+      ansible.builtin.debug:
+        msg: "new_list_environments.is_enabled is true"
+      when: new_list_environments.is_enabled
+
+    - name: Notify if new_list_environments.is_enabled is false
+      ansible.builtin.debug:
+        msg: "new_list_environments.is_enabled is false"
+      when: not new_list_environments.is_enabled
+
+    - name: Show the result
+      ansible.builtin.debug:
+        var: new_list_environments.available_flags
+```

@@ -21,4 +21,5 @@
     "python.analysis.extraPaths": [
         "./"
     ],
+    "ansible.python.interpreterPath": "/Users/joe/Documents/Projects/jjc-lieutenant-green/.venv/bin/python",
 }
