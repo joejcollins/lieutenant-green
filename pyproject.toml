@@ -19,5 +19,5 @@ dependencies = [
     "UnleashClient",
 ]
 
-# Find all the packages in the project using automatic discovery (flat-layout).
+# Find all the packages in the root project using automatic discovery (flat-layout).
 [tool.setuptools.packages.find]
