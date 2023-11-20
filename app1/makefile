@@ -21,6 +21,7 @@ report:  # Report the python version and pip list.
 	.venv/bin/python -m pip list -v
 
 requirements:  # Install the requirements.
+	$(MAKE) clean
 	-pyenv update
 	-pyenv install --skip-existing
 	python -m venv .venv
