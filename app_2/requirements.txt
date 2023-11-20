@@ -33,5 +33,4 @@ zipp==3.17.0
 # setuptools
 # Add this package and the independent support package
 --editable .
---editable .
 --editable ../package_b

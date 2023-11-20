@@ -27,5 +27,6 @@ wheel==0.41.3
 # The following packages are considered to be unsafe in a requirements file:
 # pip
 # setuptools
+# Add this package and the root package
 --editable .
 --editable ..
