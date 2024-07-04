@@ -16,6 +16,7 @@ packages = [
 ipykernel = "^6.29.5"
 python = "^3.11"
 requests = "^2.25.1"
+TinyDb = "^4.5.1"
 numpy = ">=1.19.0,<2.0.0"
 
 [tool.poetry.dev-dependencies]
