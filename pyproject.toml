@@ -1,24 +1,42 @@
-[build-system]
-requires = ["setuptools", "setuptools-scm"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "everything"
-version = "0.0.1"
-description = "The whole project"
+[tool.poetry]
+name = "lieutenant-green"
+version = "0.1.0"
+description = "TinyDb testing."
+authors = ["Joe J Collins <joejcollins@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.8"
+homepage = "https://example.com"
+repository = "https://github.com/joejcollins/lieutenant-green"
+documentation = "https://example.com/docs"
 
-classifiers = [
-    "Programming Language :: Python :: 3",
-]
+# Optional dependencies
 dependencies = [
-    "pip-tools",  # used to manage requirements.txt.
-    "pytest",
-    "setuptools",
-    "toml",
-    "UnleashClient",
+    "requests",
+    "numpy >=1.19.0, <2.0.0"
 ]
 
-# Find all the packages in the root project using automatic discovery (flat-layout).
-[tool.setuptools.packages.find]
+# Development dependencies
+dev-dependencies = [
+    "pytest",
+    "black",
+    "isort"
+]
+
+[tool.poetry.scripts]
+example-script = "lieutenant_green.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+packages = [
+    { include = "example_project", from = "src" }
+]
