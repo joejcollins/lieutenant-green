@@ -5,9 +5,9 @@ description = "TinyDb testing."
 authors = ["Joe J Collins <joejcollins@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://example.com"
+homepage = "https://joejcollins.github.io/lieutenant-green/"
 repository = "https://github.com/joejcollins/lieutenant-green"
-documentation = "https://example.com/docs"
+documentation = "https://joejcollins.github.io/lieutenant-green/"
 packages = [
     { include = "lieutenant_green", from = "src" }
 ]
