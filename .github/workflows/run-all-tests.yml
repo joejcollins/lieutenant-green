@@ -1,0 +1,32 @@
+---
+name: Run All The Tests
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  run_python_tests:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/joejcollsin/lieutenant-green-dev:latest
+      options: --user root # needs to be root or the checkout fails.
+    env:
+      GITHUB_PAT: ${{ secrets.PAT_NO_PERMISSIONS }}
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: false
+        clean: true
+
+    - name: Symlink to virtual environment in container image
+      run: |
+        ln -snf /app/.venv .venv
+
+    - name: Install the local package and test.
+      run: |
+        make venv-dev
+        make report
+        make test
+...

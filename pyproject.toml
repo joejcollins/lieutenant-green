@@ -1,43 +1,64 @@
-[tool.poetry]
-name = "lieutenant-green"
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lieutenant_green"
 version = "0.1.0"
-description = "TinyDb testing."
-authors = ["Joe J Collins <joejcollins@gmail.com>"]
-license = "MIT"
+description = "Click House"
+authors = [{ name = "Joe Collins", email = "j.collins@zengenti.com" }]
 readme = "README.md"
-homepage = "https://joejcollins.github.io/lieutenant-green/"
-repository = "https://github.com/joejcollins/lieutenant-green"
-documentation = "https://joejcollins.github.io/lieutenant-green/"
-packages = [
-    { include = "lieutenant_green", from = "src" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
 ]
 
-[tool.poetry.dependencies]
-ipykernel = "^6.29.5"
-python = "^3.11"
-requests = "^2.25.1"
-TinyDb = "^4.5.1"
-numpy = ">=1.19.0,<2.0.0"
+dependencies = ["clickhouse-connect", "clickhouse-driver"]
 
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.1"
-black = "^21.6b0"
-isort = "^5.9.1"
+[project.optional-dependencies]
+dev = [
+    "black",
+    "debugpy",
+    "ipykernel",
+    "isort",
+    "mypy",
+    "pip-tools",
+    "pre-commit",
+    "pytest",
+    "ruff",
+    "setuptools",
+    "sourcery"
+]
 
-[tool.poetry.scripts]
+[project.urls]
+homepage = "https://joejcollins.github.io/lieutenant-green"
+repository = "https://github.com/joejcollins/lieutenant-green"
+documentation = "https://joejcollins.github.io/lieutenant-green"
+
+[project.scripts]
 run = "lieutenant_green.main:main"
 
-[tool.poetry.group.dev.dependencies]
-ipykernel = "^6.29.5"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.setuptools.packages.find]
+where = ["src", "tests"]
 
 [tool.black]
 line-length = 88
-target-version = ['py311']
+target-version = ['py312']
 
 [tool.isort]
 profile = "black"
 
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-q --cache-clear"
+testpaths = ["./tests"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+follow_imports = "skip"
+disable_error_code = "import-untyped"
+ignore_missing_imports = true
