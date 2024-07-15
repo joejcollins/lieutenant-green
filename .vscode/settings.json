@@ -5,29 +5,41 @@
         "tests"
     ],
     "files.exclude": {
-        "**/*.pyc": {"when": "$(basename).py"},
+        "**/*.pyc": {
+            "when": "$(basename).py"
+        },
         "**/__pycache__": true,
         "**/.pytest_cache": true
     },
     "editor.detectIndentation": true,
     "python.languageServer": "Pylance",
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Solarized Light",
     "python.defaultInterpreterPath": ".venv/bin/python",
     "python.terminal.activateEnvironment": true,
     "terminal.integrated.shellIntegration.enabled": true,
     "terminal.integrated.profiles.linux": {
         "bash": {
             "path": "bash",
-            "args": ["-l"]
+            "args": [
+                "-l"
+            ]
         }
     },
     "terminal.integrated.defaultProfile.linux": "bash",
-    "editor.rulers": [88],
+    "editor.rulers": [
+        88
+    ],
     "python.autoComplete.extraPaths": [
         "./"
     ],
     "python.analysis.extraPaths": [
         "./"
-    ]
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "cSpell.words": []
 }

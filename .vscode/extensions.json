@@ -1,5 +1,6 @@
 {
     "recommendations": [
+        "bierner.markdown-mermaid",
         "charliermarsh.ruff",
         "ms-azuretools.vscode-docker",
         "charliermarsh.ruff",
@@ -8,7 +9,7 @@
         "ms-python.mypy-type-checker",
         "ms-python.python",
         "ms-toolsai.jupyter",
-        "ms-vscode.makefile-tools",
+        "sourcery.sourcery",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml"
     ]
