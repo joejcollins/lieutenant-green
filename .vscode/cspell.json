@@ -25,6 +25,7 @@
         "organisation",
         "pyenv",
         "pylint",
+        "pyproject",
         "pytest",
         "pytwitter",
         "regen",
