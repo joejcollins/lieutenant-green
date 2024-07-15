@@ -7,4 +7,3 @@ def test_main_message() -> None:
     the_message = main.main()
     assert "Hello" in the_message
     assert "world" in the_message
-
