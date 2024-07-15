@@ -41,5 +41,7 @@
             "source.organizeImports.ruff": "explicit"
         }
     },
-    "cSpell.words": []
+    "cSpell.words": [
+        "clickhouse"
+    ]
 }
