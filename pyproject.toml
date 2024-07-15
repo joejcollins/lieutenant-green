@@ -56,7 +56,7 @@ addopts = "-q --cache-clear"
 testpaths = ["./tests"]
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.12"
 warn_return_any = true
 warn_unused_configs = true
 follow_imports = "skip"
