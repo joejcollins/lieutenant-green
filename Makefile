@@ -6,6 +6,16 @@ clean:  # Remove all build, test, coverage and Python artifacts.
 	find . -name "*.pyc" -exec rm -f {} \;
 	find . -type f -name "*.py[co]" -delete -or -type d -name "__pycache__" -delete
 
+.PHONY: docs  # because there is a directory called docs.
+docs:  # Build the Sphinx documentation from the markdown files and the API documentation.
+	rm -rf docs/_api
+	# .venv/bin/sphinx-apidoc --extensions myst_parser,autodoc2 -o docs/_api src/jim_bob
+	rm -rf site
+	.venv/bin/sphinx-build -b html docs site
+
+docs-serve:  # Serve the docs
+	python -m http.server --directory site
+
 flask:  # Run the Flask application.
 	.venv/bin/python ./src/jim_bob/main.py
 
