@@ -6,5 +6,5 @@
 :glob:
 
 *
-_api/modules
+_api/modules.rst
 ```
