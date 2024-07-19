@@ -9,15 +9,12 @@ clean:  # Remove all build, test, coverage and Python artifacts.
 .PHONY: docs  # because there is a directory called docs.
 docs:  # Build the Sphinx documentation from the markdown files and the API documentation.
 	rm -rf docs/_api
-	# .venv/bin/sphinx-apidoc --extensions myst_parser,autodoc2 -o docs/_api src/jim_bob
+	# .venv/bin/sphinx-apidoc --extensions myst_parser,autodoc2 -o docs/_api src/lieutenant_green
 	rm -rf site
 	.venv/bin/sphinx-build -b html docs site
 
 docs-serve:  # Serve the docs
 	python -m http.server --directory site
-
-flask:  # Run the Flask application.
-	.venv/bin/python ./src/jim_bob/main.py
 
 .PHONY: help
 help: # Show help for each of the makefile recipes.
