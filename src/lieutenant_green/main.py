@@ -1,3 +1,4 @@
+"""The Main File."""
 
 def main():
     message = "Hello, world!"
