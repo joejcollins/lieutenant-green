@@ -1,14 +1,10 @@
----
-layout: default
-title: Home
----
+# Lieutenant Green
 
-# Welcome to Example Project Documentation
+```{toctree}
+:caption: Contents:
+:maxdepth: 3
+:glob:
 
-This is the main page of your documentation.
-
-## Getting Started
-
-Here's how to get started with the project...
-
-Changes to docs not deploying.
+*
+_api/modules
+```
