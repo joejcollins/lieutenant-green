@@ -3,6 +3,7 @@
 # Project information
 project = "lieutentant-green"
 author = "Joe Collins"
+copyright = "Joe Collins"
 release = "1"
 
 extensions = [
