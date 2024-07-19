@@ -29,7 +29,6 @@ jobs:
     - name: Make the docs so that the module documentation is generated
       run: |
         make docs
-        ls ./site -lah
   
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
