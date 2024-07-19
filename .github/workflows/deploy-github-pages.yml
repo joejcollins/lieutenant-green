@@ -1,0 +1,37 @@
+name: Deploy Docs to Github Pages
+
+on:
+  push:
+    branches: [main] # branch to trigger deployment
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/joejcollins/lieutenant-green-dev:latest
+      options: --user root # needs to be root or the checkout fails.
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: false
+        clean: true
+
+    - name: Symlink to virtual environment in container image
+      run: |
+        ln -snf /app/.venv .venv
+
+    - name: Make the docs so that the module documentation is generated
+      run: |
+        make docs
+  
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site

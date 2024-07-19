@@ -24,12 +24,16 @@ dev = [
     "ipykernel",
     "isort",
     "mypy",
+    "myst_parser",  # for documentation.
     "pip-tools",
     "pre-commit",
     "pytest",
     "ruff",
     "setuptools",
-    "sourcery"
+    "sourcery",
+    "sphinx",  # for documentation.
+    "sphinx_rtd_theme",  # for documentation.
+    "sphinxcontrib-mermaid", # for diagrams in the documentation.
 ]
 
 [project.urls]

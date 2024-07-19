@@ -3,7 +3,6 @@
 	"build": {
 		"dockerfile": "../Dockerfile"
 	},
-	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers-contrib/features/starship:1": {}
