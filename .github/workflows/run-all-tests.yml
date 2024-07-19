@@ -4,6 +4,9 @@ name: Run All The Tests
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'tests/**'
 
 jobs:
   run_python_tests:
