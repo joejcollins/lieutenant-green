@@ -2,6 +2,7 @@ backend:
   name: github
   repo: joejcollins/lieutenant-green  # Your GitHub repo
   branch: gh-pages
+  auth_type: implicit
 
 media_folder: "static/uploads"   # Where uploaded images will be stored in the repo
 public_folder: "/uploads"        # Public URL for uploaded media files
