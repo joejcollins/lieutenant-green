@@ -2,11 +2,10 @@ backend:
   name: github
   repo: joejcollins/lieutenant-green  # Your GitHub repo
   branch: gh-pages
-  api_root: https://api.github.com
-  auth_endpoint: auth
   auth_type: implicit
   app_id: Ov23liBGa0Qdpshta5Y0
-  preview_context: pages/build
+  base_url: https://joejcollins.github.io  # GitHub Pages URL (without trailing slash)
+  auth_endpoint: /lieutenant-green 
 
 media_folder: "static/uploads"   # Where uploaded images will be stored in the repo
 public_folder: "/uploads"        # Public URL for uploaded media files
