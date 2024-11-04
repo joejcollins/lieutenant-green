@@ -6,11 +6,13 @@ backend:
 media_folder: "static/uploads"   # Where uploaded images will be stored in the repo
 public_folder: "/uploads"        # Public URL for uploaded media files
 
+site_url: https://joejcollins.github.io/lieutenant-green # GitHub Pages URL for your site
+
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts"
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
