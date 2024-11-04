@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: joejcollins/lieutenant-green  # Your GitHub repo
+  branch: gh-pages
