@@ -3,7 +3,7 @@ backend:
   repo: joejcollins/lieutenant-green  # Your GitHub repo
   branch: gh-pages
   api_root: https://api.github.com
-  site_domain: Ov23liBGa0Qdpshta5Y0
+  site_domain: joejcollins.github.io/lieutenant-green
   base_url: https://api.netlify.com
   auth_endpoint: auth
 
