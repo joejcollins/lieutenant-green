@@ -2,6 +2,10 @@ backend:
   name: github
   repo: joejcollins/lieutenant-green  # Your GitHub repo
   branch: gh-pages
+  api_root: https://api.github.com
+  site_domain: Ov23liBGa0Qdpshta5Y0
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "static/uploads"   # Where uploaded images will be stored in the repo
 public_folder: "/uploads"        # Public URL for uploaded media files
