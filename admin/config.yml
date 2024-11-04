@@ -3,6 +3,9 @@ backend:
   repo: joejcollins/lieutenant-green  # Your GitHub repo
   branch: gh-pages
   auth_type: implicit
+  app_id: Ov23liBGa0Qdpshta5Y0
+  base_url: https://joejcollins.github.io
+  auth_endpoint: /lieutenant-green
 
 media_folder: "static/uploads"   # Where uploaded images will be stored in the repo
 public_folder: "/uploads"        # Public URL for uploaded media files
