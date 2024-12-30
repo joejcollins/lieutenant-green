@@ -6,7 +6,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '.github/workflows/build-docker-dev-image.yml'
+      - '.github/workflows/build-docker-dev.yml'
       - 'Dockerfile'
       - 'requirements.dev.txt'
       - 'pyproject.toml'
