@@ -8,7 +8,7 @@ jobs:
   pages:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/joejcollins/lieutenant-green-dev:174a1b5
+      image: ghcr.io/joejcollins/lieutenant-green-dev:latest
       options: --user root # needs to be root or the checkout fails.
     environment:
       name: github-pages
