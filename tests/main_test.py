@@ -2,6 +2,7 @@
 
 from lieutenant_green import main
 
+
 def test_main_message() -> None:
     """Confirm message returned."""
     the_message = main.main()

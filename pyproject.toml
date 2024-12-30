@@ -1,39 +1,34 @@
-[build-system]
-requires = ["setuptools", "setuptools-scm"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "lieutenant_green"
 version = "0.1.0"
-description = "Click House"
-authors = [{ name = "Joe Collins", email = "j.collins@zengenti.com" }]
+description = "Data Demo"
+authors = [{ name = "Joe Collins", email = "joejcollins@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
+    "Private :: Do Not Upload",
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
-dependencies = ["clickhouse-connect", "clickhouse-driver"]
+dependencies = ["fsspec"]
 
 [project.optional-dependencies]
 dev = [
-    "black",
     "debugpy",
     "ipykernel",
-    "isort",
     "mypy",
     "myst_parser",  # for documentation.
-    "pip-tools",
     "pre-commit",
     "pytest",
+    "pytest-cov",
     "ruff",
-    "setuptools",
     "sourcery",
     "sphinx",  # for documentation.
     "sphinx_rtd_theme",  # for documentation.
     "sphinxcontrib-mermaid", # for diagrams in the documentation.
+
 ]
 
 [project.urls]
@@ -44,15 +39,9 @@ documentation = "https://joejcollins.github.io/lieutenant-green"
 [project.scripts]
 run = "lieutenant_green.main:main"
 
-[tool.setuptools.packages.find]
-where = ["src", "tests"]
-
 [tool.black]
 line-length = 88
 target-version = ['py312']
-
-[tool.isort]
-profile = "black"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
@@ -66,3 +55,9 @@ warn_unused_configs = true
 follow_imports = "skip"
 disable_error_code = "import-untyped"
 ignore_missing_imports = true
+
+[tool.ruff]
+lint.select = ["F", "E", "W", "C90", "I", "PL", "D"]
+lint.ignore = ["D203", "D213"]
+lint.fixable = ["ALL"]
+target-version = "py312"

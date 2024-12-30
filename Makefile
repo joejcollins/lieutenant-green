@@ -21,31 +21,32 @@ help: # Show help for each of the makefile recipes.
 	@grep -E '^[a-zA-Z0-9 -]+:.*#'  Makefile | sort | while read -r l; do printf "\033[1;32m$$(echo $$l | cut -f 1 -d':')\033[00m:$$(echo $$l | cut -f 2- -d'#')\n"; done
 
 lint:  # Lint the code with ruff and mypy.
-	.venv/bin/python -m ruff check ./src ./tests
-	.venv/bin/python -m mypy ./src ./tests
+	.venv/bin/ruff check ./src ./tests
+	.venv/bin/mypy ./src ./tests
+	.venv/bin/sourcery review ./src ./tests
 
 lock:  # Create the lock file and requirements file.
 	rm -f requirements.*
-	.venv/bin/python -m piptools compile --output-file=requirements.txt
-	.venv/bin/python -m piptools compile --extra=dev --output-file=requirements.dev.txt
+	uv pip compile pyproject.toml --python .venv/bin/python --output-file=requirements.txt
+	uv pip compile pyproject.toml --python .venv/bin/python --extra=dev --output-file=requirements.dev.txt
 
 report:  # Report the python version and pip list.
 	.venv/bin/python --version
 	.venv/bin/python -m pip list -v
 
 test:  # Run tests.
-	.venv/bin/python -m pytest ./tests --verbose --color=yes
+	.venv/bin/pytest ./tests --verbose --color=yes
+	.venv/bin/pytest --cov=lieutenant_green --cov-fail-under=80
 
 venv:  # Create an empty virtual environment (enough to create the requirements files).
-	-python3 -m venv .venv  # Skip failure that happens in Github Action due to permissions.
-	.venv/bin/python -m pip install --upgrade pip setuptools pip-tools
+	uv venv .venv
 
 venv-dev:  # Create the development virtual environment.
 	$(MAKE) venv
-	.venv/bin/python -m pip install -r requirements.dev.txt
-	.venv/bin/python -m pip install --editable .
+	uv pip install --python .venv/bin/python --requirements requirements.dev.txt
+	uv pip install --python .venv/bin/python --editable .
 
 venv-prod:  # Create the production virtual environment.
 	$(MAKE) venv
-	.venv/bin/python -m pip install -r requirements.txt
-	.venv/bin/python -m pip install --editable .
+	uv pip install --python .venv/bin/python --requirements requirements.txt
+	uv pip install --python .venv/bin/python --editable .
