@@ -2,7 +2,7 @@
 
 
 def main():
-    """Demonstration run of the app."""
+    """Demonstration run."""
     message = "Hello, world!"
     print(message)
     return message
