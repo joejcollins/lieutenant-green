@@ -23,10 +23,6 @@ FROM base AS development
 
 LABEL org.opencontainers.image.description="lieutenant-green development container."
 
-# Copy only the necessary files and pre-build the virtual environment.
-COPY Makefile pyproject.toml requirements.dev.txt ./
-RUN make venv-dev
-
 # Stage 2b: Production image
 ############################
 # Include a prebuilt virtual environment with only the production dependencies and all
@@ -39,5 +35,5 @@ LABEL org.opencontainers.image.description="lieutenant-green production containe
 COPY . ./
 RUN make venv-prod
 
-# Run the Flask app with the poetry script in the virtual environment.
+# Run the app in the virtual environment.
 CMD [".venv/bin/run"]
