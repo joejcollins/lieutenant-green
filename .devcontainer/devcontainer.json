@@ -31,5 +31,6 @@
             "onAutoForward": "openBrowser"
         }
 	},
-	"postCreateCommand": ". ./.devcontainer/post-create.sh  > ../post-create-log.txt"
+	"postCreateCommand": ". ./.devcontainer/post-create.sh  > ../post-create-log.txt",
+	"postStartCommand": ". ./.devcontainer/post-start.sh  > ../post-start-log.txt"
 }
