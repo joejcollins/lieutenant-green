@@ -19,6 +19,7 @@
         "flasgger",
         "fsspec",
         "funcs",
+        "gcsfuse",
         "getenv",
         "GUIDs",
         "ipykernel",
