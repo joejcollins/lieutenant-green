@@ -127,11 +127,12 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
-.pyre/
-
 # Pycharm files
 .idea
 
 # Ignore mounted data
 data/raw
+
+# devcontainer logs and environment files
+.devcontainer/*.txt
+.devcontainer/*.env

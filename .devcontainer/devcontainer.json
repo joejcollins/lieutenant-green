@@ -23,14 +23,20 @@
 			]
 		}
 	},
-	"forwardPorts": [8000],
+	"forwardPorts": [
+		8000
+	],
 	"portsAttributes": {
-        "8000": {
-            "label": "Docs",
-            "requireLocalPort": true,
-            "onAutoForward": "openBrowser"
-        }
+		"8000": {
+			"label": "Docs",
+			"requireLocalPort": true,
+			"onAutoForward": "openBrowser"
+		}
 	},
-	"postCreateCommand": ". ./.devcontainer/post-create.sh  > ../post-create-log.txt",
-	"postStartCommand": ". ./.devcontainer/post-start.sh  > ../post-start-log.txt"
+	"runArgs": [
+		"--env-file",
+		".devcontainer/devcontainer.env"
+	],
+	"postCreateCommand": ". ./.devcontainer/post-create.sh  > ./.devcontainer/post-create-log.txt",
+	"postStartCommand": ". ./.devcontainer/post-start.sh  > ./.devcontainer/post-start-log.txt"
 }
