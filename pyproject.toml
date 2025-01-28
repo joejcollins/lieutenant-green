@@ -23,8 +23,7 @@ dev = [
     "pytest",
     "pytest-cov",
     "ruff",
-    "tensorflow",
-    "torch"
+    "tensorflow"
 ]
 
 [project.urls]
