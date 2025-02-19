@@ -36,6 +36,10 @@
 			"onAutoForward": "openBrowser"
 		}
 	},
-	"postCreateCommand": ". ./.devcontainer/post-create.sh  > ./.devcontainer/post-create-log.txt",
-	"postStartCommand": ". ./.devcontainer/post-start.sh  > ./.devcontainer/post-start-log.txt"
+	"runArgs": [
+		"--env-file",
+		".devcontainer/devcontainer.env"
+	],
+	"postCreateCommand": ". ./.devcontainer/post-create.sh  > /tmp/post-create-log.txt",
+	"postStartCommand": ". ./.devcontainer/post-start.sh  > /tmp/post-start-log.txt"
 }
