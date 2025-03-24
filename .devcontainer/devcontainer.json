@@ -1,8 +1,7 @@
 {
 	"name": "lieutenant-green",
 	"build": {
-		"dockerfile": "../Dockerfile",
-		"target": "development"
+		"dockerfile": "Dockerfile"
 	},
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
@@ -36,10 +35,6 @@
 			"onAutoForward": "openBrowser"
 		}
 	},
-	"runArgs": [
-		"--env-file",
-		".devcontainer/devcontainer.env"
-	],
 	"postCreateCommand": ". ./.devcontainer/post-create.sh  > /tmp/post-create-log.txt",
 	"postStartCommand": ". ./.devcontainer/post-start.sh  > /tmp/post-start-log.txt"
 }
